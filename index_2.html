@@ -7,48 +7,67 @@
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUf9SZZ2mMMEOuCO4P82KMWa4_5G5NGHM&callback=myMap"
   type="text/javascript"></script>
   
-<title>Insert title here</title>
+<title>Zipcode Finder</title>
 <link rel="stylesheet" href="style2.css">
+	<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<div>
-	<div id="left">
-		Select your country  <select id="country">
-			<option>text goes here</option>
-		  	<option value="finland">Finland</option>
-		  	<option value="sweden">Sweden</option>
-		  	<option value="france">France</option>
-		  	<option value="germany">Germany</option>
-		</select>
+<div class="heading">
+<h1 class="w3-myfont">Find Location with Zip code</h1>
+</div>
+<div class="content-font">
+	<div id="left" >
+		<div class="card">
+			<div class="label">Select your country</div>
+				<div>
+					<select  id="country">
+						<option value="finland">Finland</option>
+						<option value="sweden">Sweden</option>
+						<option value="france">France</option>
+						<option value="germany">Germany</option>
+					</select>
+				</div>
 		<br>
-		
-		ZIP code   <input type="text" id="zipcode" placeholder="text">
+			<div class="label">ZIP code</div>
+			<div><input type="text"  id="zipcode" placeholder="E.g. 00790(Finland)"></div>
 		<br>
-		<input type="button" id="search" value="Search">
-	</div>
-	
-	<div id="right">
-		<div id="history">
-		<p>History of the last 10 searches</p>
-		<p id="test"></p>
+		<input type="button" id="search" class="w3-button w3-black w3-round-large" value="Search">
+
+		</div>
+
+		<div class="text-content">
+		<div class="result">
+			<h5 class="thicker">Location Found: </h5>
+				<table id="result">
+					<tr>
+						<th>Place Name</th>
+						<th>Longitude</th>
+						<th>Latitude</th>
+					</tr>
+					<tr>
+						<td><p id="placename"></td>
+						<td><p id="longitude"></td>
+						<td><p id="latitude"></td>
+					</tr>
+				</table>
+
+		</div>
+
+		<div class="history-table">
+			<h5 class="thicker">History of the last 10 searches</h5>
+		<table id="history">
+
+		</table>
+		</div>
 		</div>
 	</div>
-</div>
-	<table id="result">
-			<tr>
-				<th>Place Name</th>
-				<th>Longitude</th>
-				<th>Latitude</th>
-			</tr>
-			<tr>
-				<td><p id="placename"></td>
-				<td><p id="longitude"></td>
-				<td><p id="latitude"></td>
-			</tr>
-		</table>
-		
 
-	<div id="googleMap" style="width:100%;height:400px;"></div>
+	<div id="right">
+		<div id="googleMap" style="width:100%;height:600px;"></div>
+	</div>
+
+</div>
 
 </body>
 </html>

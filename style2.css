@@ -1,18 +1,47 @@
 @charset "UTF-8";
 
+.heading {
+	margin-left: 50px;
+}
+div.card {
+	width: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 60px;
+}
 
+.label {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.thicker {
+	font-weight: 900;
+	font-family: 'Muli', cursive;
+}
 #left {
     float: left;
-    width: 500px;
-    margin-right: 20px;
+    width: 400px;
+	margin-right: 20px;
+	margin-left: 50px;
 }
 #right {
 	overflow:hidden;
+	margin-top:80px;
 }
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.w3-myfont {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+.content-font {
+	font-family: 'Muli', serif;
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
@@ -21,32 +50,64 @@
     }
 }
 
+.result{
+	margin-top: 30px;
+}
 #country {
 	height: 30px;
 	width: 200px;
-	margin-top:80px;
-	margin-left: 30px;
+	margin-top:5px;
+	margin-left: 20px;
 	font-size: 15px;
+	background-color: #f5f3f2;
+	font-family: 'Muli', serif;
 }
-
+.text-content{
+	width: 350px;
+}
 #zipcode {
-	margin-top: 30px;
-	margin-left: 30px;
-	width: 80px;
-	height: 20px;
+	margin-top: 5px;
+	margin-left: 20px;
+	width: 195px;
+	height: 30px;
 	font-size: 15px;
+	background-color: #f5f3f2;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #919090;
+	padding-left: 5px;
+	font-family: 'Muli', serif;
 }
 #search {
+	width: 140px;
 	margin-left: 50px;
 	margin-top:30px;
-	
+	margin-bottom:20px;
+
+	font-family: 'Muli', serif;
 }
 
-#history {
-	margin-top: 80px;
-	height: 200px;
+/*#history {*/
+/*	margin-top: 20px;*/
+/*	height: 200px;*/
+/*	font-family: 'Muli', serif;*/
+/*}*/
+
+table {
+	border-collapse: collapse;
+	width: 100%;
 }
 
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+.history-table{
+	margin-top: 20px;
+}
 #googlemap {
 	margin-top: 30px;
 }
